@@ -1,6 +1,33 @@
-      int tabela[3][3] = {
-    {1, 2, 3},
-    {4, 5, 6},
-    {7, 8, 9}
-};
-    
+TAMANHO_TABULEIRO = 10
+TAMANHO_NAVIO = 3
+
+navios = [
+    [(0,0), (0,1), (0,2)],  
+    [(2,5), (3,5), (4,5)],  
+    [(7,7), (7,8), (7,9)], 
+]
+
+# Inicializa tabuleiro vazio
+tabuleiro = [['~' for _ in range(TAMANHO_TABULEIRO)] for _ in range(TAMANHO_TABULEIRO)]
+
+# Função simples para verificar sobreposição (sem validação de fronteiras aqui)
+def verifica_sobreposicao(navios):
+    ocupadas = set()
+    for navio in navios:
+        for celula in navio:
+            if celula in ocupadas:
+                return True  
+            ocupadas.add(celula)
+    return False
+
+# Posiciona os navios no tabuleiro apenas se não houver sobreposição
+if verifica_sobreposicao(navios):
+    print("Erro: Sobreposição de navios detectada!")
+else:
+    for navio in navios:
+        for linha, coluna in navio:
+            tabuleiro[linha][coluna] = 'N'
+
+    # Imprimir o tabuleiro
+    for linha in tabuleiro:
+        print(' '.join(linha))
