@@ -1,6 +1,6 @@
 programa {
     funcao iniciao() {
-        interio nota = 50
+        interio nota = 60
 
     se (nota >= 60)
       escreva("voce passou! parabens")
