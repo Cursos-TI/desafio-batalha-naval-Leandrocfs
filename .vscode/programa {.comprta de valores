@@ -1,7 +1,7 @@
 programa {
     funcao iniciao() {
         interio maca = 76.0
-        interio laranja = 75.0
+        interio laranja = 77.0
 
         se (maca >= laranja)
          escreva("tem mais maca do que laranja.")
