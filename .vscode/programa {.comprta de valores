@@ -1,11 +1,10 @@
 programa {
     funcao iniciao() {
-        interio idade = 40
+        interio nota = 70
+
+    se (nota >= 60)
+      escreva("voce passou! parabens")    
         
-        se (idade >= 16)
-         escreva("Voce nao pode votar!")
-        senao
-         escreva("Voce pode votar!")
-        fimse        
+       
     }
 }
