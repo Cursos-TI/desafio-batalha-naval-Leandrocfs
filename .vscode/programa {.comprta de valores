@@ -1,12 +1,12 @@
 programa {
     funcao iniciao() {
-        interio valor1 = 76.0
-        interio valor2 = 75.0
+        interio maca = 76.0
+        interio laranja = 75.0
 
-        se (valor1 == valor2)
-         escreva("os valores sao iguais.")
+        se (maca >= laranja)
+         escreva("tem mais maca do que laranja.")
         senao
-         escreva("os valores sao diferentes.")
+         escreva("tem mais laranja do que maca")
         dimse        
     }
 }
