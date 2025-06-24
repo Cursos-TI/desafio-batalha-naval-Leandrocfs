@@ -1,11 +1,15 @@
 programa {
     funcao iniciao() {
-       inteiro preco1 = 75.0
+       inteiro preco1 = 76.0
        inteiro preco2 = 76.0 
 
        se (preco1 > preco2)
          escreva("preco1 e maior que preco2")
-       senao  
-         escreva("preco1 e menor que preco2")  
+       senao
+         se (preco1 < preco2)
+           escreva("preco1 e menor que preco2")
+        senao
+           escreva("os precos sao iguais")
+
     }
 }
