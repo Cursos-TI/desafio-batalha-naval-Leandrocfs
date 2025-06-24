@@ -1,9 +1,12 @@
 programa {
     funcao iniciao() {
-        interio nota = 70
+        interio nota = 50
 
     se (nota >= 60)
-      escreva("voce passou! parabens")    
+      escreva("voce passou! parabens")
+    senao
+      escreva("infelizmente voce nao passou!")
+      fimse    
         
        
     }
