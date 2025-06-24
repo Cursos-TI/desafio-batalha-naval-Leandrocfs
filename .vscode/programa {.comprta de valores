@@ -1,13 +1,10 @@
 programa {
     funcao iniciao() {
-        interio nota = 60
+       inteiro preco1 = 76.0
+       inteiro preco2 = 76.0 
 
-    se (nota >= 60)
-      escreva("voce passou! parabens")
-    senao
-      escreva("infelizmente voce nao passou!")
-      fimse    
-        
+       se (preco1 > preco2)
+         escreva("preco1 e maior que preco2)
        
     }
 }
