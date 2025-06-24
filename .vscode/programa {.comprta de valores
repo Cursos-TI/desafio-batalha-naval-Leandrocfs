@@ -1,12 +1,12 @@
 programa {
     funcao iniciao() {
-        interio maca = 76.0
+        interio idade = 16
         interio laranja = 77.0
 
-        se (maca >= laranja)
-         escreva("tem mais maca do que laranja.")
+        se (idade >= 16)
+         escreva("Voce pode votar!")
         senao
-         escreva("tem mais laranja do que maca")
-        dimse        
+         escreva("Voce ainda nao pode votar")
+        fimse        
     }
 }
