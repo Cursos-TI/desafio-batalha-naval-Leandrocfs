@@ -1,6 +1,6 @@
 programa {
     funcao iniciao() {
-        interio idade = 15
+        interio idade = 40
         
         se (idade >= 16)
          escreva("Voce nao pode votar!")
