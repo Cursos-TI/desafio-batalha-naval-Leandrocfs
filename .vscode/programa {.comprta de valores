@@ -3,9 +3,9 @@ programa {
         interio idade = 15
         
         se (idade >= 16)
-         escreva("Voce pode votar!")
+         escreva("Voce nao pode votar!")
         senao
-         escreva("Voce ainda nao pode votar")
+         escreva("Voce pode votar!")
         fimse        
     }
 }
